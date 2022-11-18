@@ -56,16 +56,16 @@ func IsPresent(wordToFind string, choosenLetter string) bool { // func returne t
 }
 
 func AlreadySaid(choosenLetter string, wordSaid string) string {
-	err := false
+	//err := false
 	var said []string
-	letter := strings.Replace(choosenLetter, "\n", "", -1)
-	if letter < "a" || letter > "z" { // check if all char are letter and returne if its true or false
-		err = true
-	}
+	//letter := strings.Replace(choosenLetter, "\n", "", -1)
+	//if letter < "a" || letter > "z" { // check if all char are letter and returne if its true or false
+		//err = true
+	//}
 
-	if err {
-		fmt.Println(string(colorRed), "You entered an invalid letter", string(colorReset)) // if there is other char than  letters print err message
-	}
+	//if err {
+		//fmt.Println(string(colorRed), "You entered an invalid letter", string(colorReset)) // if there is other char than  letters print err message
+	//}
 
 	said = strings.Split(wordSaid, "\n") //split by char '\n'
 
