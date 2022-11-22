@@ -70,7 +70,7 @@ func AlreadySaid(choosenLetter string, wordSaid string) string {
 	said = strings.Split(wordSaid, "\n") //split by char '\n'
 
 	wordString := strings.Join(said, " ")
-	//fmt.Println("Already tried :", wordString)
+	fmt.Println("Already tried :", wordString)
 
 	return wordSaid
 }
