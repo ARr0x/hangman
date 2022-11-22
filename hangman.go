@@ -161,7 +161,7 @@ func Reveal(wordToFind string, wordInProgresse string, choosenLetter string) str
 }
 
 func Position(attempts int) string{
-	hangFile, _ := ioutil.ReadFile("../position_hangman.txt") 
+	hangFile, _ := ioutil.ReadFile("hangman.txt") 
 	file := strings.Split(string(hangFile), ",,") //crete a table of string with the position of the hangman
 	if attempts < 0 {
 		fmt.Println(file[0])
